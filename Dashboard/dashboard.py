@@ -3,9 +3,9 @@ import pandas as pd
 import streamlit as st
 import plotly.express as px
 
-# Karena dashboard.py dan all_data.csv berada di folder yang sama,
-# kita dapat menggunakan path relatif sederhana
-DATA_PATH = 'all_data.csv'
+# Dapatkan direktori file dashboard.py
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_PATH = os.path.join(BASE_DIR, "all_data.csv")  # karena file berada di folder yang sama
 
 if not os.path.exists(DATA_PATH):
     st.error(f"File tidak ditemukan: {DATA_PATH}")
