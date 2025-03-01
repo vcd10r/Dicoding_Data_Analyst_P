@@ -1,8 +1,6 @@
 Babel==2.12.1
 matplotlib==3.8.0
-numpy==1.25.2
+numpy==1.26.4
 pandas==2.1.4
-seaborn==0.13.0
-streamlit==1.30.0
+streamlit==1.22.0
 plotly==5.14.1
-scikit-learn==1.2.2
